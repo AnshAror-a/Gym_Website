@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+        
+        .fade {
+            transition: background-color 0.6s ease;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @media only screen and (max-width: auto) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="row ">
+                <div class="card " style="color: white;background: var(--secondary-color); ">
+                    <h2>Spirit Commercial Fitness Expands Strength Series - SP-43</h2>
+                    <p>Spirit Commercial Fitness has announced a new series of selectorized strength equipment that will give fitness business owners even more sleek, durable and high-value options to choose from when building out their strength training
+                        sections.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="row ">
+                <div class="card " style="color: white;background: var(--secondary-color); ">
+                    <h2>The Perfect Recipe for a Thriving, Post-Pandemic Cycle Studio</h2>
+                    <p>New cycle studio owner Mollie Herrera needs only a sentence to sum up what she believes a person needs to launch a successful cycle studio in a post-pandemic world. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="row ">
+                <div class="card " style="color: white;background: var(--secondary-color); ">
+                    <h2>Spirit Commercial Fitness launches advanced technological ENT Console</h2>
+                    <p>Spirit Commercial Fitness has launched an advanced ENT Console that combines cutting-edge technologies with a sleek and ergonomic design to serve as the centerpiece for the updated 800ENT+ Series cardio line.</p>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mySlides fade">
+            <div class="row ">
+                <div class="card " style="color: white;background: var(--secondary-color); ">
+                    <h2>Café Chain Partners with Spirit Commercial Fitness for In-Store Gym</h2>
+                    <p>A global café chain has chosen Spirit Commercial Fitness as a partner for a new store concept that provides customers with space in which to work, and to work-out.</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="mySlides fade">
+            <div class="row ">
+                <div class="card " style="color: white;background: var(--secondary-color); ">
+                    <h2>TaiSPO Digital Exhibition 2022</h2>
+                    <p>We are excited to invite all of you to attend the TaiSPO Digital Exhibition 2022 from March 9th till April 8th. It’s a part of this year’s hybrid event by TaiSPO, there is a physical show and an online exhibition for the international
+                        audience..
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 10000);
+        }
+    </script>
+
+</body>
+
+</html>

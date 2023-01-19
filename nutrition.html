@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid white;
+            display: inline-block;
+            width: 600px;
+        }
+        
+        div.gallery:hover {
+            border: 1px solid black;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        .dv {
+            color: cornsilk;
+            text-decoration: none;
+        }
+        
+        body {
+            background-image: linear-gradient(#2f1023);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2 class="logo"></h2>
+            <ul>
+                <a href="Home.html">
+                    <li>Home</li>
+                </a>
+                <a href="trainings.html">
+                    <li>Trainings</li>
+                </a>
+                <a href="Gallery.html">
+                    <li>Gallery</li>
+                </a>
+                <a href="https://www.facebook.com/"><img src="facebook.jpg" width="50px" height="50px" style="float: right; "></a>
+                <a href="https://www.instagram.com/"><img src="Instagram.jpg" width="50px" height="50px" style="float: right;"></a>
+            </ul>
+        </nav>
+    </header>
+    <div style="padding-top:5% ;">
+        <div class="gallery">
+            <a target="_blank" href="ht1.jpg">
+                <img id="img1" src="nt1.jpg" alt="Cinque Terre" width="600" height="400" onmouseover="over1()" onmouseout="out1()">
+                <div class="dv" id="d1"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht2.jpg">
+                <img id="img2" src="nt2.jpg" alt="Forest" width="600" height="400" onmouseover="over2()" onmouseout="out2()">
+                <div class="dv" id="d2"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht3.jpg">
+                <img id="img3" src="nt3.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over3()" onmouseout="out3()">
+                <div class="dv" id="d3"></div>
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="ht4.jpg">
+                <img id="img4" src="nt4.jpg" alt="Cinque Terre" width="600" height="400" onmouseover="over4()" onmouseout="out4()">
+                <div class="dv" id="d4"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht5.jpg">
+                <img id="img5" src="nt5.jpg" alt="Forest" width="600" height="400" onmouseover="over5()" onmouseout="out5()">
+                <div class="dv" id="d5"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht6.jpg">
+                <img id="img6" src="nt6.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over6()" onmouseout="out6()">
+                <div class="dv" id="d6"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht6.jpg">
+                <img id="img7" src="nt7.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over7()" onmouseout="out7()">
+                <div class="dv" id="d7"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht6.jpg">
+                <img id="img8" src="nt8.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over8()" onmouseout="out8()">
+                <div class="dv" id="d8"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht6.jpg">
+                <img id="img9" src="nt9.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over9()" onmouseout="out9()">
+                <div class="dv" id="d9"></div>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="ht6.jpg">
+                <img id="img10" src="nt10.jpg" alt="Northern Lights" width="600" height="400" onmouseover="over10()" onmouseout="out10()">
+                <div class="dv" id="d10"></div>
+            </a>
+        </div>
+    </div>
+    <script>
+        function over1() {
+            document.getElementById('d1').innerHTML = "100% WHEY PROTEIN" + '<br>' + "25g-Protein" + '<br>' + "120-Calories" + '<br>' + "1g-Sugar" + '<br>' + "2g-Carbs";
+        }
+
+        function out1() {
+            document.getElementById('d1').innerHTML = " ";
+        }
+
+        function over2() {
+            document.getElementById('d2').innerHTML = "HARDCORE MASS" + '<br>' + "22.5g-Protein" + '<br>' + "362-Kcal-Calories" + '<br>' + "2.5g-Creatnine" + '<br>' + "70g-Carbs";
+        }
+
+        function out2() {
+            document.getElementById('d2').innerHTML = " ";
+        }
+
+        function over3() {
+            document.getElementById('d3').innerHTML = "ISOLATE RAW WHEY" + '<br>' + "27g-Protein" + '<br>' + "116-Calories" + '<br>' + "0g-Sugar";
+        }
+
+        function out3() {
+            document.getElementById('d3').innerHTML = " ";
+        }
+
+        function over4() {
+            document.getElementById('d4').innerHTML = "ISOLATE WHEY PROTEIN" + '<br>' + "25g-Protein" + '<br>' + "112-Calories" + '<br>' + "1g-Total Fat";
+        }
+
+        function out4() {
+            document.getElementById('d4').innerHTML = " ";
+        }
+
+        function over5() {
+            document.getElementById('d5').innerHTML = "MUSCLE FUSION" + '<br>' + "18g-Protein" + '<br>' + "404-Calories" + '<br>' + "3g-Total Fat" + '<br>' + "110mg-Calcium";
+        }
+
+        function out5() {
+            document.getElementById('d5').innerHTML = " ";
+        }
+
+        function over6() {
+            document.getElementById('d6').innerHTML = "RAW WHEY" + '<br>' + "24g-Protein" + '<br>' + "120-Kcal-Calories" + '<br>' + "1.5g-Total Fat" + '<br>' + "0g-Sugar";
+        }
+
+        function out6() {
+            document.getElementById('d6').innerHTML = " ";
+        }
+
+        function over7() {
+            document.getElementById('d7').innerHTML = "XXL MASS GAINER" + '<br>' + "22.4g-Protein" + '<br>' + "362-Calories" + '<br>' + "110mg-Calcium" + '<br>' + "70g-Total Carbs";
+        }
+
+        function out7() {
+            document.getElementById('d7').innerHTML = " ";
+        }
+
+        function over8() {
+            document.getElementById('d8').innerHTML = "BCAA" + '<br>' + "2300mg-Sodium" + '<br>' + "180g-Potassium" + '<br>' + "0g-Sugar";
+        }
+
+        function out8() {
+            document.getElementById('d8').innerHTML = " ";
+        }
+
+        function over9() {
+            document.getElementById('d9').innerHTML = "CREATNINE" + '<br>' + "5g-Creatnine";
+        }
+
+        function out9() {
+            document.getElementById('d9').innerHTML = " ";
+        }
+
+        function over10() {
+            document.getElementById('d10').innerHTML = "PRE WORKOUT" + '<br>' + "25mg-Niacin";
+        }
+
+        function out10() {
+            document.getElementById('d10').innerHTML = " ";
+        }
+    </script>
+</body>
+
+</html>
